@@ -4,7 +4,7 @@
   "description": "This is simple application that implements whisper protocol using Web3 Whisper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Shady Amir",
   "license": "ISC",
@@ -12,7 +12,9 @@
     "whisper-protocol": "./index.js"
   },
   "dependencies": {
+    "chai": "^4.1.2",
     "dotenv": "^6.0.0",
+    "mocha": "^5.2.0",
     "web3": "^1.0.0-beta.36"
   }
 }

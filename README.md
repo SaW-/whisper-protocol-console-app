@@ -23,7 +23,7 @@ node index.js host:localhost port:8545 nickname:shady encryption:asym topic:topi
 ```
 then enter recipient key.
 
-## user CLI
+## use CLI
 ```bash
 chmod +x index.js           # Make the file executable
 npm link

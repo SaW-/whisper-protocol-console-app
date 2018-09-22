@@ -24,7 +24,6 @@ var recursiveAsyncReadLine = function () {
 };
 
 if(encryption == "asym"){
-  console.log("P");
   rl.question('\nPlease enter recipient key: ', function (key) {
     whisper.setKey(key);
 

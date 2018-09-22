@@ -22,6 +22,10 @@ class Whisper {
 
     }
 
+    getShh(){
+        return this.shh;
+    }
+
     configKey(){
         if(this.encryptionType == "asym"){
             this.generateAsymKey();
@@ -58,10 +62,9 @@ class Whisper {
 		}).catch(console.log);
     }
 
-    generateSymKey(){
-        this.shh.generateSymKeyFromPassword(this.key).then(symKeyID => {
+   async generateSymKey(){
+      await this.shh.generateSymKeyFromPassword(this.key).then(symKeyID => {
             this.symKeyId = symKeyID;
-
             this.registerTopic();
         }).catch(function (err) {
             console.log(err);

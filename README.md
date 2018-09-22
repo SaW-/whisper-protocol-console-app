@@ -21,4 +21,12 @@ run with asymmetric key
 ```bash
 node index.js host:localhost port:8545 nickname:shady encryption:asym topic:topic
 ```
-then enter recipient key. 
+then enter recipient key.
+
+## user CLI
+```bash
+chmod +x index.js           # Make the file executable
+npm link
+
+whisper-protocol host:localhost port:8545 nickname:shady encryption:sym topic:topic key:key
+```

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var readline = require('readline');
 const {Whisper} = require('./whisper/whisper');
 const {ChatServer, parseArgs} = require('./whisper/config/whisperConfig');
